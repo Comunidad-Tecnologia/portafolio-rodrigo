@@ -28,6 +28,13 @@ header, main, footer {
 	margin-left:2%;
 }
 
+#new-title{
+	background-color:#00b0ff !important;
+	border-radius:10px;
+	padding: 10px 10px 10px 10px;
+	font-size: 1em;
+}
+
 
         
       

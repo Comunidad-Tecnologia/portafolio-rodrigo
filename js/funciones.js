@@ -1,4 +1,5 @@
 function load_content(element,name){
+	load_grid();
 	$("#content").load("pages/"+name);
 	load_grid();
 	remove_lateral_color();
@@ -17,7 +18,6 @@ function load_grid(){
 
 function remove_lateral_color(){
 	$.each($('#menu li a'),function(key,value){
-		console.log(value);
 		$(value).removeClass('light-blue-text');
 		$(value).removeClass('accent-4');
 	});
