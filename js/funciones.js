@@ -1,9 +1,10 @@
 function load_content(element,name){
 	load_grid();
-	$("#content").load("pages/"+name);
-	load_grid();
-	remove_lateral_color();
-	$(element).addClass('light-blue-text accent-4');
+	$("#content").load("pages/"+name,function(){
+		load_grid();
+		remove_lateral_color();
+		$(element).addClass('light-blue-text accent-4');
+	});
 }
 
 function load_grid(){
